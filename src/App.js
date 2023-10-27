@@ -1,14 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { Header } from './components/Header';
+import { Banner } from './components/Banner';
+import { Main } from './components/Main';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={"http://imgfz.com/i/KrbMgL5.png"} className="App-logo" alt="logo" />
-        <h1>Proximamente</h1>
-        <h5>Casedif | La nueva forma de construir</h5>
-      </header>
+      <Header/>
+      <Banner/>
+      <Main/>
     </div>
   );
 }
