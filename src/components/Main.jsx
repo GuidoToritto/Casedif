@@ -33,6 +33,101 @@ export const Main = () => {
           </div>
         </div>
       </div>
+
+      <div className="image-circle">
+        <div>
+          <div className="image-circle-01"></div>
+          <div className="image-circle-02"></div>
+        </div>
+        <div className="text-circle">
+          <div className="card-title">Construcción Rápida</div>
+          <div className="card-subtitle">
+            Una vez aprobado el proyecto, podes tener tu casa en 150 días lista
+            para habitar y dejar de alquilar.
+          </div>
+          <div className="card-title">Asesoramiento</div>
+          <div className="card-subtitle">
+            Contamos con un amplio staff de cada gremio para ayudarte a pensar,
+            diseñar y decorar tu proyecto tanto en interior como en exterior.
+          </div>
+        </div>
+      </div>
+
+      <div className="yellow-bg">
+        <div className="image-circle">
+          <div>
+            <div className="image-circle-01"></div>
+            <div className="image-circle-02"></div>
+          </div>
+
+          <div className="text-circle">
+            <div className="card-title">Construcción Rápida</div>
+            <div className="card-subtitle">
+              Una vez aprobado el proyecto, podes tener tu casa en 150 días
+              lista para habitar y dejar de alquilar.
+            </div>
+            <div className="card-title">Asesoramiento</div>
+            <div className="card-subtitle">
+              Contamos con un amplio staff de cada gremio para ayudarte a
+              pensar, diseñar y decorar tu proyecto tanto en interior como en
+              exterior.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="steelframe01">Trabajos terminados</div>
+
+      <div className="container">
+        <div
+          className="panel active"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+          }}
+        >
+          <img src="" alt="" />
+        </div>
+        <div
+          className="panel active"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+          }}
+        >
+          <img src="" alt="" />
+        </div>
+        <div
+          className="panel active"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+          }}
+        >
+          <img src="" alt="" />
+        </div>
+        <div
+          className="panel active"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+          }}
+        >
+          <img src="" alt="" />
+        </div>
+        <div
+          className="panel active"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+          }}
+        >
+          <img src="" alt="" />
+        </div>
+        <div
+          className="panel active"
+          style={{
+            backgroundImage: `url("https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80")`,
+          }}
+        >
+          <img src="" alt="" />
+        </div>
+      </div>
     </div>
   );
 };

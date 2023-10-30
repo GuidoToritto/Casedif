@@ -8,6 +8,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 0 auto;
   background-color: black;
@@ -117,4 +118,72 @@ p {
   color: #ffff;
   padding: 10px;
   font-size: 15px;
+}
+
+.image-circle{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+
+.yellow-bg{
+  background-color:#f4ce14;
+  color: black;
+}
+.image-circle .card-title, .image-circle .card-subtitle{
+  width: 700px;
+}
+
+.image-circle .card-title{
+  margin-top: 150px;
+  font-size: 60px;
+}
+
+.image-circle .card-subtitle{
+  font-size: 30px;
+}
+
+
+
+.image-circle-01{
+  width: 500px;
+  height: 500px;
+  background-image: url(https://i.pinimg.com/564x/ab/f8/2b/abf82bdc9bdae779ba21799b538cf3ad.jpg);
+  position: relative;
+  border-radius: 100%;
+  left: 100px;
+  top: 150px;
+}
+
+.image-circle-02{
+  width: 500px;
+  height: 500px;
+  background-image: url(https://i.pinimg.com/564x/46/e7/6a/46e76ac7024806ec32264568bb4809f7.jpg);
+  position: relative;
+  border-radius: 100%;
+  left: 300px;
+  bottom: 100px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.panel{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel.active{
+  flex: 5;
 }
