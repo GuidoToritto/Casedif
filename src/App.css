@@ -66,20 +66,23 @@ p {
   width: 100%;
   height: 800px;
   position: absolute;
-  top: 10;
+  top: 20;
   left: 0;
   margin: 0;
   z-index: -1; /* Coloca la imagen detrás del contenido si es necesario */
   object-fit: cover; /* Cortará la imagen manteniendo la relación de aspecto */
-  filter: grayscale(100%);
+  filter:opacity(0.3);
   
 }
 
 .steelframe01 {
-  padding-top: 400px;
+  padding-top: 200px;
   font-size: 115px;
   padding-left: 1%;
   font-weight: bold;
+}
+.finishwork .steelframe01{
+  padding-top: 0px;
 }
 
 .steelframe02 {
@@ -175,6 +178,7 @@ p {
   width: 500px;
   height: 500px;
   background-image: url(https://i.pinimg.com/564x/ab/f8/2b/abf82bdc9bdae779ba21799b538cf3ad.jpg);
+  filter: grayscale(100%);
   position: relative;
   border-radius: 100%;
   left: 100px;
