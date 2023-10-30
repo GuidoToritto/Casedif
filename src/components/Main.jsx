@@ -77,7 +77,7 @@ export const Main = () => {
       </div>
 
       <div className="steelframe01">Trabajos terminados</div>
-
+      
       <div className="container">
         <div
           className="panel active"
