@@ -9,8 +9,12 @@ export const Header = () => {
       </div>
       <div className="logo-text">
         <h1>Casedif <br /><p>EMPRESA CONSTRUCTORA</p></h1>
+      </div>
+
+      <div className="whatsapp">
         
       </div>
     </header>
+    
   );
 };

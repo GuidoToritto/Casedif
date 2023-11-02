@@ -12,6 +12,8 @@ function App() {
       <Header/>
       <Banner/>
       <Main/>
+      <br/>
+      <h5>Casedif  |  Todos los derechos reservados 2023 ®</h5>
     </div>
   );
 }

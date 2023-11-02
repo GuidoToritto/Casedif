@@ -33,52 +33,53 @@ export const Main = () => {
           </div>
         </div>
       </div>
-
-      <div className="image-circle">
+      <br /><br /><br /><br />
+     <div className="background-color-image">
+     <div className="image-circle">
         <div>
           <div className="image-circle-01"></div>
           <div className="image-circle-02"></div>
         </div>
         <div className="text-circle">
-          <div className="card-title">Construcción Rápida</div>
           <div className="card-subtitle">
+            <div className="card-title">Construcción Rápida</div>
             Una vez aprobado el proyecto, podes tener tu casa en 150 días lista
             para habitar y dejar de alquilar.
           </div>
-          <div className="card-title">Asesoramiento</div>
+
           <div className="card-subtitle">
+            <div className="card-title">Asesoramiento</div>
             Contamos con un amplio staff de cada gremio para ayudarte a pensar,
             diseñar y decorar tu proyecto tanto en interior como en exterior.
           </div>
         </div>
       </div>
+     </div>
 
-      <div className="yellow-bg">
-        <div className="image-circle">
-          <div>
-            <div className="image-circle-01"></div>
-            <div className="image-circle-02"></div>
-          </div>
-
-          <div className="text-circle">
+      <div className="image-circle">
+        <div className="text-circle">
+          <div className="card-subtitle">
             <div className="card-title">Construcción Rápida</div>
-            <div className="card-subtitle">
-              Una vez aprobado el proyecto, podes tener tu casa en 150 días
-              lista para habitar y dejar de alquilar.
-            </div>
-            <div className="card-title">Asesoramiento</div>
-            <div className="card-subtitle">
-              Contamos con un amplio staff de cada gremio para ayudarte a
-              pensar, diseñar y decorar tu proyecto tanto en interior como en
-              exterior.
-            </div>
+            Una vez aprobado el proyecto, podes tener tu casa en 150 días lista
+            para habitar y dejar de alquilar.
           </div>
+
+          <div className="card-subtitle">
+            <div className="card-title">Asesoramiento</div>
+            Contamos con un amplio staff de cada gremio para ayudarte a pensar,
+            diseñar y decorar tu proyecto tanto en interior como en exterior.
+          </div>
+        </div>
+
+        <div>
+          <div className="image-circle-03"></div>
+          <div className="image-circle-04"></div>
         </div>
       </div>
 
-      <div className="finishwork">
-        <div className="steelframe01">Trabajos terminados</div>
-      </div>
+      
+      <div className="steelframe">Trabajos terminados</div>
+      <br />
 
       <div className="container">
         <div
@@ -145,8 +146,116 @@ export const Main = () => {
         >
           <img src="" alt="" />
         </div>
-        
       </div>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <div className="card">
+        <div className="cards">
+          <img
+            src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
+            className="steelframe-img"
+            alt=""
+          />
+          <div className="card-title">Gestion Integral</div>
+          <div className="card-subtitle">
+            Gestionamos tu proyecto completo. Desde el diseño, permisos,
+            construción y amoblamientos incluyendo también la compra de
+            materiales.
+          </div>
+          <button className="btn-info">Más info.</button>
+        </div>
+        <div className="cards">
+          <img
+            src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
+            className="steelframe-img"
+            alt=""
+          />
+          <div className="card-title">Gestion Integral</div>
+          <div className="card-subtitle">
+            Gestionamos tu proyecto completo. Desde el diseño, permisos,
+            construción y amoblamientos incluyendo también la compra de
+            materiales.
+          </div>
+          <button className="btn-info">Más info.</button>
+        </div>
+        <div className="cards">
+          <img
+            src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
+            className="steelframe-img"
+            alt=""
+          />
+          <div className="card-title">Gestion Integral</div>
+          <div className="card-subtitle">
+            Gestionamos tu proyecto completo. Desde el diseño, permisos,
+            construción y amoblamientos incluyendo también la compra de
+            materiales.
+          </div>
+          <button className="btn-info">Más info.</button>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <br />
+
+      <div className="project-together">
+        <div className="banner-form">
+          <br />
+          <br />
+          <div className="comencemos">¡Comencemos juntos tu proyecto!</div>
+          <div className="completa">
+            Completá los datos de tu proyecto y cotizá tu obra en menos de un
+            día.
+          </div>
+          <h3 className="">
+            Zona de servicio: <br /> Buenos Aires, Argentina.
+          </h3>
+          <br />
+          <br />
+          <br />
+          <br />
+          <h3>
+            Lavalle 333, CABA <br />
+            casedif@gmail.com <br /> +54 9 11 7618 0939
+          </h3>
+          <br /><br />
+        </div>
+        <div className="form">
+          <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label> <br />
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email: </label>
+                <br />
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="mail">Ubicacion del proyecto:</label> <br />
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="mail">Ubicacion del proyecto:</label> <br />
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Message:</label> <br />
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+              <button className="btn-info-down">Enviar</button>
+            </ul>
+          </form>
+        </div>
+      </div>
+      
+      
     </div>
   );
 };
