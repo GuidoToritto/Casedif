@@ -1,6 +1,34 @@
 import React from "react";
+import { Carousel } from "react-carousel-minimal";
 
 export const Main = () => {
+  const data = [
+    {
+      image:
+        "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
+      caption: "Estas son las estructuras que usamos para trabajar",
+    },
+    {
+      image:
+        "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
+      caption: "Estas son las estructuras que usamos para trabajar",
+    },
+    {
+      image:
+        "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
+      caption: "Estas son las estructuras que usamos para trabajar",
+    }
+  ];
+
+  const captionStyle = {
+    fontSize: "2em",
+    fontWeight: "bold",
+  };
+  const slideNumberStyle = {
+    fontSize: "20px",
+    fontWeight: "bold",
+  };
+
   return (
     <div>
       <div className="title">Las ventajas de construir con nosotros</div>
@@ -33,28 +61,32 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      <br /><br /><br /><br />
-     <div className="background-color-image">
-     <div className="image-circle">
-        <div>
-          <div className="image-circle-01"></div>
-          <div className="image-circle-02"></div>
-        </div>
-        <div className="text-circle">
-          <div className="card-subtitle">
-            <div className="card-title">Construcción Rápida</div>
-            Una vez aprobado el proyecto, podes tener tu casa en 150 días lista
-            para habitar y dejar de alquilar.
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="background-color-image">
+        <div className="image-circle">
+          <div>
+            <div className="image-circle-01"></div>
+            <div className="image-circle-02"></div>
           </div>
+          <div className="text-circle">
+            <div className="card-subtitle">
+              <div className="card-title">Construcción Rápida</div>
+              Una vez aprobado el proyecto, podes tener tu casa en 150 días
+              lista para habitar y dejar de alquilar.
+            </div>
 
-          <div className="card-subtitle">
-            <div className="card-title">Asesoramiento</div>
-            Contamos con un amplio staff de cada gremio para ayudarte a pensar,
-            diseñar y decorar tu proyecto tanto en interior como en exterior.
+            <div className="card-subtitle">
+              <div className="card-title">Asesoramiento</div>
+              Contamos con un amplio staff de cada gremio para ayudarte a
+              pensar, diseñar y decorar tu proyecto tanto en interior como en
+              exterior.
+            </div>
           </div>
         </div>
       </div>
-     </div>
 
       <div className="image-circle">
         <div className="text-circle">
@@ -77,83 +109,46 @@ export const Main = () => {
         </div>
       </div>
 
-      
       <div className="steelframe">Trabajos terminados</div>
       <br />
 
-      <div className="container">
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
-        </div>
-        <div
-          className="panel active"
-          style={{
-            backgroundImage: `url("https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg")`,
-          }}
-        >
-          <img src="" alt="" />
+      <div>
+        <div style={{ textAlign: "center" }}>
+          <div
+            style={{
+              padding: "0 20px",
+            }}
+          >
+            <Carousel
+              data={data}
+              time={2000}
+              width="100%"
+              maxWidth="100%"
+              height="500px"
+              captionStyle={captionStyle}
+              radius="10px"
+              slideNumber={true}
+              slideNumberStyle={slideNumberStyle}
+              captionPosition="bottom"
+              automatic={true}
+              dots={true}
+              pauseIconColor="white"
+              pauseIconSize="40px"
+              slideBackgroundColor="darkgrey"
+              slideImageFit="cover"
+              
+              style={{
+                textAlign: "center",
+                maxWidth: "1200px",
+                maxHeight: "500px",
+                margin: "40px auto",
+              }}
+            />
+          </div>
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
+      
       <div className="card">
         <div className="cards">
           <img
@@ -223,7 +218,8 @@ export const Main = () => {
             Lavalle 333, CABA <br />
             casedif@gmail.com <br /> +54 9 11 7618 0939
           </h3>
-          <br /><br />
+          <br />
+          <br />
         </div>
         <div className="form">
           <form action="/my-handling-form-page" method="post">
@@ -254,8 +250,6 @@ export const Main = () => {
           </form>
         </div>
       </div>
-      
-      
     </div>
   );
 };

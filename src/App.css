@@ -118,12 +118,14 @@ p {
 
 .title {
   font-size: 60px;
+  margin: 0 auto;
   font-weight: bold;
   text-align: center;
   margin-top: 330px;
 }
 
 .subtitle {
+  margin: 0 auto;
   font-size: 30px;
   text-align: center;
   color: #ffff;
@@ -366,3 +368,123 @@ li {
 .btn-info-down:hover {
   background-color: #00000010;
 }
+
+@media (max-width: 1680px) {
+  .steelframe01 {
+    width: 350px;
+    font-size: 40px;
+  }
+  .steelframe02 {
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  .btn{
+    font-size: 15px;
+  }
+
+  .Img01{
+    height: 400px;
+  }
+
+  .title{
+    font-size: 30px;
+    width: 350px;
+    margin-top: 80px;
+  }
+
+  .subtitle{
+    width: 350px;
+    font-size: 20px;
+  }
+
+  .card{
+    grid-template-columns: auto;
+  }
+  
+  .image-circle-01{
+    width: 160px;
+    height: 160px;
+    left: -30px;
+    top: 30px;
+  }
+
+  .image-circle-02{
+    width: 160px;
+    height: 160px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .image-circle-03{
+    width: 160px;
+    height: 160px;
+    left: 40px;
+    top: 20px;
+  }
+
+  .image-circle-04{
+    width: 160px;
+    height:  160px;
+    left: 10px;
+    top: -10px;
+  }
+  .background-color-image{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-circle .card-title{
+    font-size: 20px;
+    margin: 0 auto;
+    width: 150px;
+  }
+  .image-circle .card-subtitle {
+    margin: 0 auto;
+    width: 150px;
+    font-size: 10px;
+  }
+
+  .container{
+    display: none;
+  }
+  .project-together{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .banner-form{
+    width: 350px;
+    margin: 0 auto;
+  }
+  .comencemos{
+    font-size: 40px;
+  }
+
+  .completa{
+    font-size: 20px;
+  }
+
+  .steelframe{
+    font-size: 30px;
+  }
+
+  ul{
+    display: inline;    
+  }
+
+  textarea, input{
+    width: 90%;
+  }
+
+  .btn-info-down{
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+}
+
+
+
