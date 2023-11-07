@@ -17,7 +17,7 @@ export const Main = () => {
       image:
         "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
       caption: "Estas son las estructuras que usamos para trabajar",
-    }
+    },
   ];
 
   const captionStyle = {
@@ -136,11 +136,12 @@ export const Main = () => {
               pauseIconSize="40px"
               slideBackgroundColor="darkgrey"
               slideImageFit="cover"
-              
               style={{
+                border: "3px solid #f4ce14",
+                borderRadius: "15px",
                 textAlign: "center",
                 maxWidth: "1200px",
-                maxHeight: "500px",
+                maxHeight: "100%",
                 margin: "40px auto",
               }}
             />
@@ -148,7 +149,6 @@ export const Main = () => {
         </div>
       </div>
 
-      
       <div className="card">
         <div className="cards">
           <img

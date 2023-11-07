@@ -2,18 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@600&family=Montserrat&display=swap");
 
 .work {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  height: 100%;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.918);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  bottom: 0;
+  right: 0;
   z-index: 2;
 }
 
@@ -21,6 +12,7 @@
   margin: 20px;
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 * {
@@ -380,62 +372,62 @@ li {
     grid-template-columns: auto auto;
     align-items: center;
   }
-  .btn{
+  .btn {
     font-size: 15px;
   }
 
-  .Img01{
+  .Img01 {
     height: 400px;
   }
 
-  .title{
+  .title {
     font-size: 30px;
     width: 350px;
     margin-top: 80px;
   }
 
-  .subtitle{
+  .subtitle {
     width: 350px;
     font-size: 20px;
   }
 
-  .card{
+  .card {
     grid-template-columns: auto;
   }
-  
-  .image-circle-01{
+
+  .image-circle-01 {
     width: 160px;
     height: 160px;
     left: -30px;
     top: 30px;
   }
 
-  .image-circle-02{
+  .image-circle-02 {
     width: 160px;
     height: 160px;
     left: 0px;
     top: 0px;
   }
 
-  .image-circle-03{
+  .image-circle-03 {
     width: 160px;
     height: 160px;
     left: 40px;
     top: 20px;
   }
 
-  .image-circle-04{
+  .image-circle-04 {
     width: 160px;
-    height:  160px;
+    height: 160px;
     left: 10px;
     top: -10px;
   }
-  .background-color-image{
+  .background-color-image {
     width: 100%;
     margin: 0 auto;
   }
 
-  .image-circle .card-title{
+  .image-circle .card-title {
     font-size: 20px;
     margin: 0 auto;
     width: 150px;
@@ -446,45 +438,42 @@ li {
     font-size: 10px;
   }
 
-  .container{
+  .container {
     display: none;
   }
-  .project-together{
+  .project-together {
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto;
   }
 
-  .banner-form{
+  .banner-form {
     width: 350px;
     margin: 0 auto;
   }
-  .comencemos{
+  .comencemos {
     font-size: 40px;
   }
 
-  .completa{
+  .completa {
     font-size: 20px;
   }
 
-  .steelframe{
+  .steelframe {
     font-size: 30px;
   }
 
-  ul{
-    display: inline;    
+  ul {
+    display: inline;
   }
 
-  textarea, input{
+  textarea,
+  input {
     width: 90%;
   }
 
-  .btn-info-down{
+  .btn-info-down {
     width: 90%;
     margin-bottom: 40px;
   }
-
 }
-
-
-

@@ -7,8 +7,8 @@ import { Work } from './components/Work';
 
 function App() {
   return (
-    <div className="App">
-      
+    <div className="App">   
+      <Work/>
       <Header/>
       <Banner/>
       <Main/>
