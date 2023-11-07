@@ -13,14 +13,14 @@
   width: 100px;
   height: 100px;
   cursor: pointer;
-  background-color: #f4ce14;
   border: 4px solid #fff;
   border-radius: 50%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .logo-principal:hover{
   background-color: green;
+
 }
 
 * {
