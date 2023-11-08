@@ -33,25 +33,25 @@ export const Main = () => {
 
   function showAlert() {
     const Toast = Swal.mixin({
-        toast: true,
-        position: 'top-end',
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-            toast.addEventListener('mouseenter', Swal.stopTimer)
-            toast.addEventListener('mouseleave', Swal.resumeTimer)
-        },
-        customClass: {
-            popup: 'custom-swal-popup'
-        }
-    })
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+      customClass: {
+        popup: "custom-swal-popup",
+      },
+    });
 
     Toast.fire({
-        icon: 'success',
-        title: 'Mensaje enviado. ¡¡Muchas gracias!! <3'
-    })
-}
+      icon: "success",
+      title: "Mensaje enviado. ¡Muchas gracias!",
+    });
+  }
 
   return (
     <div>
@@ -246,26 +246,26 @@ export const Main = () => {
           <br />
         </div>
         <div className="form">
-          <form action="https://formsubmit.co/guidotoritto@outlook.com" onsubmit="showAlert()" method="POST"> 
+          <form
+            action="https://formsubmit.co/casedif@gmail.com"
+            onSubmit={showAlert}
+            method="POST"
+          >
             <ul>
+              <input
+                type="hidden"
+                name="_next"
+                value="https://www.casedif.com"
+              />
+              <input type="hidden" name="_captcha" value="false" />
               <li>
                 <label for="name-input">Name:</label> <br />
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  
-                />
+                <input type="text" id="name" name="name" />
               </li>
               <li>
                 <label htmlFor="mail">Email: </label>
                 <br />
-                <input
-                  type="email"
-                  id="mail"
-                  name="user_email"
-                  
-                />
+                <input type="email" id="mail" name="user_email" />
               </li>
               <li>
                 <label htmlFor="ubicacion_proyecto">
@@ -276,24 +276,15 @@ export const Main = () => {
                   type="text"
                   id="ubicacion_proyecto"
                   name="ubicacion_proyecto"
-                  
                 />
               </li>
               <li>
                 <label htmlFor="msg">Message:</label> <br />
-                <textarea
-                  id="msg"
-                  name="user_message"
-                 
-                />
+                <textarea id="msg" name="user_message" />
               </li>
               <button className="btn-info-down">Enviar</button>
             </ul>
-
-            <input type="hidden" name="_text" value="https://www.casedif.com" />
-            <input type="hidden" name="_captcha" value="false" />
           </form>
-
         </div>
       </div>
     </div>
