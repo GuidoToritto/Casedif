@@ -1,5 +1,7 @@
 import React from "react";
 import { Carousel } from "react-carousel-minimal";
+import Swal from "sweetalert2";
+import { useState } from "react";
 
 export const Main = () => {
   const data = [
@@ -27,6 +29,63 @@ export const Main = () => {
   const slideNumberStyle = {
     fontSize: "20px",
     fontWeight: "bold",
+  };
+
+  const [formData, setFormData] = useState({
+    user_name: "",
+    user_email: "",
+    ubicacion_proyecto: "",
+    user_message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Envía los datos del formulario al servidor
+    try {
+      const response = await fetch("/my-handling-form-page", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.status === 200) {
+        // Muestra una notificación exitosa con SweetAlert
+        Swal.fire({
+          icon: "success",
+          title: "¡Formulario enviado!",
+          text: "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.",
+        });
+
+        // Limpia el formulario
+        setFormData({
+          user_name: "",
+          user_email: "",
+          ubicacion_proyecto: "",
+          user_message: "",
+        });
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.",
+        });
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.",
+      });
+    }
   };
 
   return (
@@ -222,28 +281,50 @@ export const Main = () => {
           <br />
         </div>
         <div className="form">
-          <form action="/my-handling-form-page" method="post">
+          <form onSubmit={handleSubmit}>
             <ul>
               <li>
-                <label for="name">Name:</label> <br />
-                <input type="text" id="name" name="user_name" />
+                <label htmlFor="name">Name:</label> <br />
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  value={formData.user_name}
+                  onChange={handleChange}
+                />
               </li>
               <li>
-                <label for="mail">Email: </label>
+                <label htmlFor="mail">Email: </label>
                 <br />
-                <input type="email" id="mail" name="user_email" />
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  value={formData.user_email}
+                  onChange={handleChange}
+                />
               </li>
               <li>
-                <label for="mail">Ubicacion del proyecto:</label> <br />
-                <input type="email" id="mail" name="user_email" />
+                <label htmlFor="ubicacion_proyecto">
+                  Ubicacion del proyecto:
+                </label>{" "}
+                <br />
+                <input
+                  type="text"
+                  id="ubicacion_proyecto"
+                  name="ubicacion_proyecto"
+                  value={formData.ubicacion_proyecto}
+                  onChange={handleChange}
+                />
               </li>
               <li>
-                <label for="mail">Ubicacion del proyecto:</label> <br />
-                <input type="email" id="mail" name="user_email" />
-              </li>
-              <li>
-                <label for="msg">Message:</label> <br />
-                <textarea id="msg" name="user_message"></textarea>
+                <label htmlFor="msg">Message:</label> <br />
+                <textarea
+                  id="msg"
+                  name="user_message"
+                  value={formData.user_message}
+                  onChange={handleChange}
+                />
               </li>
               <button className="btn-info-down">Enviar</button>
             </ul>
