@@ -31,62 +31,27 @@ export const Main = () => {
     fontWeight: "bold",
   };
 
-  const [formData, setFormData] = useState({
-    user_name: "",
-    user_email: "",
-    ubicacion_proyecto: "",
-    user_message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    // Envía los datos del formulario al servidor
-    try {
-      const response = await fetch("/my-handling-form-page", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+  function showAlert() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
         },
-        body: JSON.stringify(formData),
-      });
+        customClass: {
+            popup: 'custom-swal-popup'
+        }
+    })
 
-      if (response.status === 200) {
-        // Muestra una notificación exitosa con SweetAlert
-        Swal.fire({
-          icon: "success",
-          title: "¡Formulario enviado!",
-          text: "Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.",
-        });
-
-        // Limpia el formulario
-        setFormData({
-          user_name: "",
-          user_email: "",
-          ubicacion_proyecto: "",
-          user_message: "",
-        });
-      } else {
-        Swal.fire({
-          icon: "error",
-          title: "Error",
-          text: "Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.",
-        });
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "Hubo un problema al enviar el formulario. Por favor, inténtalo de nuevo.",
-      });
-    }
-  };
+    Toast.fire({
+        icon: 'success',
+        title: 'Mensaje enviado. ¡¡Muchas gracias!! <3'
+    })
+}
 
   return (
     <div>
@@ -281,16 +246,15 @@ export const Main = () => {
           <br />
         </div>
         <div className="form">
-          <form onSubmit={handleSubmit}>
+          <form action="https://formsubmit.co/guidotoritto@outlook.com" onsubmit="showAlert()" method="POST"> 
             <ul>
               <li>
-                <label htmlFor="name">Name:</label> <br />
+                <label for="name-input">Name:</label> <br />
                 <input
                   type="text"
                   id="name"
-                  name="user_name"
-                  value={formData.user_name}
-                  onChange={handleChange}
+                  name="name"
+                  
                 />
               </li>
               <li>
@@ -300,8 +264,7 @@ export const Main = () => {
                   type="email"
                   id="mail"
                   name="user_email"
-                  value={formData.user_email}
-                  onChange={handleChange}
+                  
                 />
               </li>
               <li>
@@ -313,8 +276,7 @@ export const Main = () => {
                   type="text"
                   id="ubicacion_proyecto"
                   name="ubicacion_proyecto"
-                  value={formData.ubicacion_proyecto}
-                  onChange={handleChange}
+                  
                 />
               </li>
               <li>
@@ -322,13 +284,16 @@ export const Main = () => {
                 <textarea
                   id="msg"
                   name="user_message"
-                  value={formData.user_message}
-                  onChange={handleChange}
+                 
                 />
               </li>
               <button className="btn-info-down">Enviar</button>
             </ul>
+
+            <input type="hidden" name="_text" value="https://www.casedif.com" />
+            <input type="hidden" name="_captcha" value="false" />
           </form>
+
         </div>
       </div>
     </div>
