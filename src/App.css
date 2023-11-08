@@ -363,6 +363,8 @@ li {
   border-radius: 0px 0px 20px 20px;
   cursor: pointer;
   font-weight: bold;
+  font-style: none;
+  text-decoration: none;
 }
 
 .btn-info-down:hover {
@@ -516,6 +518,8 @@ li {
 
   .btn{
     font-size: 15px;
+    text-align: center;
+    width: 150px;
   }
 
   .title {
@@ -627,4 +631,16 @@ li {
     width: 50px;
     height: 50px;
   }
+
+  .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form{
+    width: 300px;
+  }
+
+  
 }
