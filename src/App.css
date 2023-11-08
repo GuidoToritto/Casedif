@@ -644,3 +644,29 @@ li {
 }
 
 
+.swal2-show{
+  background-color: #f4ce14;
+  border: 2px solid #000;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+}
+
+.swal2-container button:where(.swal2-styled).swal2-confirm{
+  background-color: #f4ce14;
+  color: #000;
+  font-weight: bold;
+}
+
+.swal2-actions{
+  border: 2px solid  #000;
+  border-radius: 20px;
+  color: #000;
+}
+
+.swal2-popup.swal2-toast{
+  color: #f4ce14;
+  font-size: 20px;
+  font-weight: bold;
+
+}
