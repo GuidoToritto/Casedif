@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useRef} from "react";
 import Img01 from "../images/01.webp";
 
+
 export const Banner = () => {
+  const projectSectionRef = useRef()
+  const scrollToProjectSection = ()=>{
+    projectSectionRef.current.scrollIntoView({behavior: "smooth"})
+  }
+
   return (
     <div>
       <img
@@ -11,10 +17,7 @@ export const Banner = () => {
       />
       <div className="steelframe01">
         Construí tu casa en Steelframe sin arriesgar tu dinero
-        <div className="steelframe02">
-          <div>Modalidad llave en mano</div>
-          <div className="btn">Quiero construir</div>
-        </div>
+       
       </div>
     </div>
   );

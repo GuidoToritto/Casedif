@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Swal from "sweetalert2";
 import { useState } from "react";
 
 export const Main = () => {
+  const projectSectionRef = useRef();
+  const scrollToProjectSection = () => {
+    projectSectionRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   const data = [
     {
       image:
@@ -33,11 +38,11 @@ export const Main = () => {
 
   function showAlert(event) {
     event.preventDefault(); // Evita que el formulario se envíe automáticamente
-  
+
     const name = document.getElementById("name").value;
     const email = document.getElementById("mail").value;
     const message = document.getElementById("msg").value;
-  
+
     if (name && email && message) {
       // Si los campos requeridos están llenos, muestra la notificación
       const Toast = Swal.mixin({
@@ -54,7 +59,7 @@ export const Main = () => {
           popup: "custom-swal-popup",
         },
       });
-  
+
       Toast.fire({
         icon: "success",
         title: "Mensaje enviado. ¡Muchas gracias!",
@@ -68,10 +73,16 @@ export const Main = () => {
       });
     }
   }
-  
 
   return (
     <div>
+      <div className="steelframe02">
+        <div>Modalidad llave en mano</div>
+        <div className="btn" onClick={scrollToProjectSection}>
+          Quiero construir
+        </div>
+      </div>
+      
       <div className="title">Las ventajas de construir con nosotros</div>
       <div className="subtitle">
         Te acercamos algunas de las ventajas que ofrecemos a nuestros clientes.
@@ -239,7 +250,7 @@ export const Main = () => {
       <br />
       <br />
 
-      <div className="project-together">
+      <div ref={projectSectionRef} className="project-together">
         <div className="banner-form">
           <br />
           <br />
