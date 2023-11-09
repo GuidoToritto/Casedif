@@ -15,10 +15,7 @@ export const Banner = () => {
         className="Img01"
         alt=""
       />
-      <div className="steelframe01">
-        Construí tu casa en Steelframe sin arriesgar tu dinero
-       
-      </div>
+      
     </div>
   );
 };

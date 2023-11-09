@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Swal from "sweetalert2";
 import { useState } from "react";
+import ScrollBoxes from "./Animation";
 
 export const Main = () => {
   const projectSectionRef = useRef();
@@ -76,19 +77,24 @@ export const Main = () => {
 
   return (
     <div>
-      <div className="steelframe02">
+      <div className="steelframe01 box">
+        Construí tu casa en Steelframe sin arriesgar tu dinero
+       
+      </div>
+      <div className="steelframe02 box">
         <div>Modalidad llave en mano</div>
         <div className="btn" onClick={scrollToProjectSection}>
           Quiero construir
         </div>
       </div>
-      
-      <div className="title">Las ventajas de construir con nosotros</div>
-      <div className="subtitle">
+
+      <div className="title box">Las ventajas de construir con nosotros</div>
+      <div className="subtitle box">
+        <ScrollBoxes />
         Te acercamos algunas de las ventajas que ofrecemos a nuestros clientes.
       </div>
 
-      <div className="card">
+      <div className="card box">
         <div className="cards">
           <div className="card-title">Gestion Integral</div>
           <div className="card-subtitle">
@@ -118,7 +124,7 @@ export const Main = () => {
       <br />
       <br />
       <div className="background-color-image">
-        <div className="image-circle">
+        <div className="image-circle box">
           <div>
             <div className="image-circle-01"></div>
             <div className="image-circle-02"></div>
@@ -140,7 +146,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="image-circle">
+      <div className="image-circle box">
         <div className="text-circle">
           <div className="card-subtitle">
             <div className="card-title">Construcción Rápida</div>
@@ -161,10 +167,10 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="steelframe">Trabajos terminados</div>
+      <div className="steelframe box">Trabajos terminados</div>
       <br />
 
-      <div>
+      <div className="box">
         <div style={{ textAlign: "center" }}>
           <div
             style={{
@@ -201,7 +207,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card box">
         <div className="cards">
           <img
             src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
@@ -250,7 +256,7 @@ export const Main = () => {
       <br />
       <br />
 
-      <div ref={projectSectionRef} className="project-together">
+      <div ref={projectSectionRef} className="project-together box">
         <div className="banner-form">
           <br />
           <br />
