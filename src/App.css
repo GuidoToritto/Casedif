@@ -19,7 +19,7 @@
   background-color: green;
 }
 
-.logo-principal:hover{
+.logo-principal:hover {
   background-color: #f4ce14;
 }
 
@@ -133,16 +133,16 @@ p {
 }
 
 .card {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
   justify-content: center;
+  align-self: center;
 }
 
 .cards {
   text-align: center;
   border: 2px solid #f4ce14;
   border-radius: 20px;
-  width: 350px;
+  width: 80%;
   margin: 30px;
   padding: 10px;
 }
@@ -284,12 +284,6 @@ p {
   flex: 5;
 }
 
-.steelframe-img {
-  width: 100%;
-  border: 2px solid #f4ce14;
-  border-radius: 20px 20px 0px 0px;
-}
-
 .btn-info {
   width: 100%;
   border: 2px solid #f4ce14;
@@ -315,6 +309,10 @@ p {
   color: #000;
 }
 
+.form {
+  width: 400px;
+}
+
 .banner-form {
   width: 900px;
 }
@@ -337,12 +335,18 @@ h5 {
 
 textarea,
 input {
-  background-color: transparent;
+  margin-top: 5px;
+  padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  width: 400px;
-  border: 0;
-  border-bottom: 2px solid black;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+textarea {
+  border-radius: 20px 20px 0 0;
+  height: 100px;
 }
 
 textarea,
@@ -366,10 +370,46 @@ li {
   font-weight: bold;
   font-style: none;
   text-decoration: none;
+  color: #000;
 }
 
 .btn-info-down:hover {
   background-color: #00000010;
+}
+
+.presupuesto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4ce14;
+  color: #000;
+}
+
+.presupuesto .card-subtitle {
+  font-size: 30px;
+  color: #000;
+}
+
+.presupuesto .card-title {
+  font-size: 50px;
+  color: #000;
+  font-weight: bold;
+}
+
+.introducir-presupuesto {
+  width: 400px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.card-presupuesto {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.p2{
+  border-radius: 20px 20px 0px 0px;
 }
 
 @media (max-width: 1680px) {
@@ -384,7 +424,6 @@ li {
     justify-content: start;
     align-items: center;
   }
-  
 
   .Img01 {
     height: 350px;
@@ -396,7 +435,7 @@ li {
     width: 100%;
     margin-top: 80px;
   }
-  .btn{
+  .btn {
     width: 100%;
   }
 
@@ -404,32 +443,30 @@ li {
     font-size: 20px;
   }
 
-
   .card {
     display: flex;
   }
-  .cards{
+  .cards {
     width: 100%;
   }
-  
 
   .image-circle-01 {
     width: 250px;
-    height:250px;
+    height: 250px;
     left: -30px;
     top: 30px;
   }
 
   .image-circle-02 {
-    width:250px;
-    height:250px;
+    width: 250px;
+    height: 250px;
     left: 0px;
     top: 0px;
   }
 
   .image-circle-03 {
     width: 250px;
-    height:250px;
+    height: 250px;
     left: 40px;
     top: 20px;
   }
@@ -463,6 +500,7 @@ li {
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto;
+    justify-content: center;
   }
 
   .banner-form {
@@ -484,8 +522,8 @@ li {
   ul {
     display: inline;
   }
-  
-  .form{
+
+  .form {
     width: 400px;
   }
 
@@ -511,13 +549,12 @@ li {
     grid-template-columns: auto 200px;
     align-items: center;
   }
-  
 
   .Img01 {
     height: 400px;
   }
 
-  .btn{
+  .btn {
     font-size: 15px;
     text-align: center;
     width: 150px;
@@ -540,7 +577,7 @@ li {
     grid-template-columns: auto;
   }
 
-  .cards{
+  .cards {
     width: 300px;
   }
 
@@ -612,9 +649,7 @@ li {
     font-size: 30px;
   }
 
-  ul {
-    display: inline;
-  }
+  
 
   textarea,
   input {
@@ -622,56 +657,87 @@ li {
   }
 
   .btn-info-down {
-    width: 90%;
     margin-bottom: 40px;
   }
 
-  .logo-principal{
+  .logo-principal {
     background-color: green;
     padding: 0px;
     width: 50px;
     height: 50px;
   }
 
-  .form{
+  .form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  form{
+  form {
     width: 300px;
   }
+
+  .card-presupuesto {
+    width: 100%;
+  }
+
+  .presupuesto .card-subtitle {
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px ;
+  }
+
+  .presupuesto .card-title {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .introducir-presupuesto input {
+    width: 250px;
+  }
+
+  .btn-info-down {
+    font-size: 20px;
+  }
+
+  .introducir-presupuesto .btn-info-down{
+    width: 250px;
+  }
+
+  .introducir-presupuesto{
+    padding-bottom: 0px;
+  }
+
 }
 
-
-.swal2-show{
+.swal2-show {
   border: 2px solid #000;
   color: #000;
   font-family: "Montserrat", sans-serif;
   border-radius: 20px;
 }
 
-.swal2-container button:where(.swal2-styled).swal2-confirm{
-  background-color: #fff;
+.swal2-container button:where(.swal2-styled).swal2-confirm {
+  background-color: #f4ce14;
   color: #000;
   font-weight: bold;
+  border: 2px solid #000;
+  border-radius: 20px;
 }
 
-.swal2-actions{
-  border: 2px solid  #000;
+.swal2-actions {
   border-radius: 20px;
   color: #000;
 }
 
-.swal2-popup.swal2-toast{
+.swal2-popup.swal2-toast {
   color: #f4ce14;
   font-size: 20px;
   font-weight: bold;
-
 }
 
-.box{
+.box {
   transform: translateX(400%);
   transition: transform 0.4s ease;
 }

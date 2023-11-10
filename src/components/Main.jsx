@@ -79,7 +79,6 @@ export const Main = () => {
     <div>
       <div className="steelframe01 box">
         Construí tu casa en Steelframe sin arriesgar tu dinero
-       
       </div>
       <div className="steelframe02 box">
         <div>Modalidad llave en mano</div>
@@ -207,48 +206,35 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="card box">
-        <div className="cards">
-          <img
-            src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
-            className="steelframe-img"
-            alt=""
-          />
-          <div className="card-title">Gestion Integral</div>
-          <div className="card-subtitle">
-            Gestionamos tu proyecto completo. Desde el diseño, permisos,
-            construción y amoblamientos incluyendo también la compra de
-            materiales.
+      <div className="card card-presupuesto box">
+        <div className="cards presupuesto">
+          <div className="presupuesto-card">
+            <div className="card-title">Gestioná tu presupuesto</div>
+            <div className="card-subtitle">
+                Gestionamos tu proyecto completo. Desde el diseño, permisos,
+                construción y amoblamientos incluyendo también la compra de
+                materiales.
+              </div>
+
+            <div className="container-presu">
+             
+
+              <div className="introducir-presupuesto">
+                <li>
+                  <label for="name-input">introducí M2 cubiertos:</label> <br />
+                  <input type="text" id="name" name="name" />
+                </li>
+                <li>
+                  <label for="name-input">introducí M2 semicubiertos:</label> <br />
+                  <input className="p2" type="text" id="name" name="name" />
+                </li>
+                <button className="btn-info-down btn-presu">
+                  Obtener prespuesto
+                </button>
+              </div>
+            </div>
+            
           </div>
-          <button className="btn-info">Más info.</button>
-        </div>
-        <div className="cards">
-          <img
-            src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
-            className="steelframe-img"
-            alt=""
-          />
-          <div className="card-title">Gestion Integral</div>
-          <div className="card-subtitle">
-            Gestionamos tu proyecto completo. Desde el diseño, permisos,
-            construción y amoblamientos incluyendo también la compra de
-            materiales.
-          </div>
-          <button className="btn-info">Más info.</button>
-        </div>
-        <div className="cards">
-          <img
-            src="https://i.pinimg.com/564x/38/5b/2a/385b2a98b89800b79b4cf72c8d47b5e2.jpg"
-            className="steelframe-img"
-            alt=""
-          />
-          <div className="card-title">Gestion Integral</div>
-          <div className="card-subtitle">
-            Gestionamos tu proyecto completo. Desde el diseño, permisos,
-            construción y amoblamientos incluyendo también la compra de
-            materiales.
-          </div>
-          <button className="btn-info">Más info.</button>
         </div>
       </div>
 
@@ -274,7 +260,7 @@ export const Main = () => {
           <br />
           <h3>
             Lavalle 333, CABA <br />
-            casedif@gmail.com <br /> +54 9 11 7618 0939
+            casedif@gmail.com <br /> Teléfono: +54 9 11 7618 0939
           </h3>
           <br />
           <br />
