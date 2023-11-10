@@ -37,43 +37,28 @@ export const Main = () => {
     fontWeight: "bold",
   };
 
-  function showAlert(event) {
-    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+  function showAlert() {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: "top-end",
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener("mouseenter", Swal.stopTimer);
+        toast.addEventListener("mouseleave", Swal.resumeTimer);
+      },
+      customClass: {
+        popup: "custom-swal-popup",
+      },
+    });
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("mail").value;
-    const message = document.getElementById("msg").value;
-
-    if (name && email && message) {
-      // Si los campos requeridos están llenos, muestra la notificación
-      const Toast = Swal.mixin({
-        toast: true,
-        position: "top-end",
-        showConfirmButton: false,
-        timer: 2000,
-        timerProgressBar: true,
-        didOpen: (toast) => {
-          toast.addEventListener("mouseenter", Swal.stopTimer);
-          toast.addEventListener("mouseleave", Swal.resumeTimer);
-        },
-        customClass: {
-          popup: "custom-swal-popup",
-        },
-      });
-
-      Toast.fire({
-        icon: "success",
-        title: "Mensaje enviado. ¡Muchas gracias!",
-      });
-    } else {
-      // Si faltan campos requeridos, muestra un mensaje de error
-      Swal.fire({
-        icon: "error",
-        title: "Error",
-        text: "Por favor, complete todos los campos obligatorios.",
-      });
-    }
+    Toast.fire({
+      icon: "success",
+      title: "Mensaje enviado. ¡Muchas gracias!",
+    });
   }
+
 
   return (
     <div>
@@ -267,7 +252,7 @@ export const Main = () => {
         </div>
         <div className="form">
           <form
-            action="https://formsubmit.co/casedif@gmail.com"
+            action="https://formsubmit.co/guidotoritto@outlook.com"
             onSubmit={showAlert}
             method="POST"
           >
