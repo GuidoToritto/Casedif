@@ -1,7 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Swal from "sweetalert2";
-import { useState } from "react";
 import ScrollBoxes from "./Animation";
 
 export const Main = () => {
@@ -37,19 +36,34 @@ export const Main = () => {
     fontWeight: "bold",
   };
 
+  const [m2Cubiertos, setM2Cubiertos] = useState(0);
+  const [m2Semicubiertos, setM2Semicubiertos] = useState(0);
+
+  const calcularPresupuesto = () => {
+    // Realizar cálculos
+    const presupuesto = m2Cubiertos * 590 + m2Semicubiertos * 295;
+    const desembolsoInicial = presupuesto * 0.015;
+
+    // Mostrar SweetAlert con el presupuesto y desembolso inicial
+    Swal.fire({
+      title: "Presupuesto",
+      html: `<p>Presupuesto: ${presupuesto} USD </p><p>Desembolso Inicial: ${desembolsoInicial} USD</p>`,
+      icon: "success",
+    });
+  };
+
   function showAlert() {
+    const input1 = document.getElementById("name").value;
+    const input2 = document.getElementById("mail").value;
+    const input3 = document.getElementById("ubicacion_proyecto").value;
+    const input4 = document.getElementById("msg").value;
 
-    const input1 = document.getElementById('name').value
-    const input2 = document.getElementById('mail').value
-    const input3 = document.getElementById('ubicacion_proyecto').value
-    const input4 = document.getElementById('msg').value
-
-    if (input1 === ''|| input2 === '' || input3 === '' || input4 === ''){
+    if (input1 === "" || input2 === "" || input3 === "" || input4 === "") {
       Swal.fire({
-        icon: 'error',
-        title: 'Error',
-        text: 'Por favor, completa todos los campos.',
-      })
+        icon: "error",
+        title: "Error",
+        text: "Por favor, completa todos los campos.",
+      });
       return;
     }
 
@@ -73,7 +87,6 @@ export const Main = () => {
       title: "Mensaje enviado. ¡Muchas gracias!",
     });
   }
-
 
   return (
     <div>
@@ -211,29 +224,44 @@ export const Main = () => {
           <div className="presupuesto-card">
             <div className="card-title">Gestioná tu presupuesto</div>
             <div className="card-subtitle">
-                Gestionamos tu proyecto completo. Desde el diseño, permisos,
-                construción y amoblamientos incluyendo también la compra de
-                materiales.
-              </div>
+              Gestionamos tu proyecto completo. Desde el diseño, permisos,
+              construción y amoblamientos incluyendo también la compra de
+              materiales.
+            </div>
 
             <div className="container-presu">
-             
-
               <div className="introducir-presupuesto">
                 <li>
-                  <label for="name-input">introducí M2 cubiertos:</label> <br />
-                  <input type="text" id="name" name="name" />
+                  <label htmlFor="m2cubiertos">Introducí M2 cubiertos:</label>{" "}
+                  <br />
+                  <input
+                    type="number"
+                    id="m2cubiertos"
+                    value={m2Cubiertos}
+                    onChange={(e) => setM2Cubiertos(e.target.value)}
+                  />
                 </li>
                 <li>
-                  <label for="name-input">introducí M2 semicubiertos:</label> <br />
-                  <input className="p2" type="text" id="name" name="name" />
+                  <label htmlFor="m2semicubierto">
+                    Introducí M2 semicubiertos:
+                  </label>{" "}
+                  <br />
+                  <input
+                    className="p2"
+                    type="number"
+                    id="m2semicubierto"
+                    value={m2Semicubiertos}
+                    onChange={(e) => setM2Semicubiertos(e.target.value)}
+                  />
                 </li>
-                <button className="btn-info-down btn-presu">
-                  Obtener prespuesto
+                <button
+                  className="btn-info-down btn-presu"
+                  onClick={calcularPresupuesto}
+                >
+                  Obtener presupuesto
                 </button>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
