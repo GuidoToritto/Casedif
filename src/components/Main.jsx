@@ -245,12 +245,12 @@ export const Main = () => {
             <div className="container-presu">
               <div className="introducir-presupuesto">
                 <li>
-                  <label htmlFor="m2cubiertos">Introducí M2 cubiertos:</label>{" "}
+                  <label htmlFor="m2cubiertos" >Introducí M2 cubiertos:</label>{" "}
                   <br />
                   <input
                     type="number"
                     id="m2cubiertos"
-                    value={m2Cubiertos}
+                    value={m2Cubiertos === 0 ? '' : m2Cubiertos} 
                     onChange={(e) => setM2Cubiertos(e.target.value)}
                   />
                 </li>
@@ -262,8 +262,9 @@ export const Main = () => {
                   <input
                     className="p2"
                     type="number"
+                    
                     id="m2semicubierto"
-                    value={m2Semicubiertos}
+                    value={m2Semicubiertos === 0 ? '' : m2Semicubiertos} 
                     onChange={(e) => setM2Semicubiertos(e.target.value)}
                   />
                 </li>
