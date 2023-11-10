@@ -38,6 +38,21 @@ export const Main = () => {
   };
 
   function showAlert() {
+
+    const input1 = document.getElementById('name').value
+    const input2 = document.getElementById('mail').value
+    const input3 = document.getElementById('ubicacion_proyecto').value
+    const input4 = document.getElementById('msg').value
+
+    if (input1 === ''|| input2 === '' || input3 === '' || input4 === ''){
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Por favor, completa todos los campos.',
+      })
+      return;
+    }
+
     const Toast = Swal.mixin({
       toast: true,
       position: "top-end",
@@ -252,7 +267,7 @@ export const Main = () => {
         </div>
         <div className="form">
           <form
-            action="https://formsubmit.co/guidotoritto@outlook.com"
+            action="https://formsubmit.co/casedif@gmail.com"
             onSubmit={showAlert}
             method="POST"
           >
