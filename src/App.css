@@ -1,5 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=League+Spartan:wght@600&family=Montserrat&display=swap");
+
+
+@font-face{
+  src: url(../src/fuentes/static-league/LeagueSpartan-Medium.ttf) format('truetype');
+  font-family:"League Spartan";
+}
+
+@font-face{
+  src: url(../src/fuentes/static/Montserrat-Medium.ttf) format('truetype');
+  font-family:"Montserrat";
+}
 
 .work {
   position: fixed;

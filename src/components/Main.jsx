@@ -40,11 +40,24 @@ export const Main = () => {
   const [m2Semicubiertos, setM2Semicubiertos] = useState(0);
 
   const calcularPresupuesto = () => {
+    // Convertir los valores a números
+    const m2CubiertosNumber = parseFloat(m2Cubiertos);
+    const m2SemicubiertosNumber = parseFloat(m2Semicubiertos);
+  
     // Realizar cálculos
-    const presupuesto = m2Cubiertos * 590 + m2Semicubiertos * 295;
+    const presupuesto = m2CubiertosNumber * 590 + m2SemicubiertosNumber * 295;
     const desembolsoInicial = presupuesto * 0.015;
+  
+    // Validar campos
+    if (isNaN(m2CubiertosNumber) || isNaN(m2SemicubiertosNumber)) {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Por favor, completa todos los campos con valores numéricos.",
+      });
+      return;
+    }
 
-    // Mostrar SweetAlert con el presupuesto y desembolso inicial
     Swal.fire({
       title: "Presupuesto",
       html: `<p>Presupuesto: ${presupuesto} USD </p><p>Desembolso Inicial: ${desembolsoInicial} USD</p>`,
