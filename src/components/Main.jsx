@@ -13,17 +13,17 @@ export const Main = () => {
     {
       image:
         "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
-      caption: "Estas son las estructuras que usamos para trabajar",
+      caption: "Desliza para ver los resultados entregados",
     },
     {
       image:
         "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
-      caption: "Estas son las estructuras que usamos para trabajar",
+      caption: "Desliza para ver los resultados entregados",
     },
     {
       image:
         "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
-      caption: "Estas son las estructuras que usamos para trabajar",
+      caption: "Deliza para ver los resultados entregados",
     },
   ];
 
@@ -53,14 +53,14 @@ export const Main = () => {
       Swal.fire({
         icon: "error",
         title: "Error",
-        text: "Por favor, completa todos los campos con valores.",
+        text: "Por favor, completa los campos con valores válidos para que podamos ayudarte. Si necesitas ayuda con el presupuesto, podes contactarte con un asesor. :)",
       });
       return;
     }
 
     Swal.fire({
-      title: "Presupuesto",
-      html: `<p>Presupuesto: ${presupuesto} USD </p><p>Desembolso Inicial: ${desembolsoInicial} USD</p>`,
+      title: "Felicitaciones",
+      html: `<p>El valor total de inversión de tu obra es de u$d ${presupuesto} final con materiales de primera línea. </p><p> Sólo necitás realizar un desembolso inicial de u$d ${desembolsoInicial} y luego abonás lo restante a medida que estés de acuerdo con los resultados.¡Solicitá una reunion y dale vida a tu proyecto!</p>`,
       icon: "success",
     });
   };
@@ -132,14 +132,14 @@ export const Main = () => {
           <div className="card-title">Minimo anticipo</div>
           <div className="card-subtitle">
             No necesitas desembolsar grandes inversiones para que trabajemos en
-            tu proyecto. Nuestros anticipos no superan el 5% del total de la
-            obra.
+            tu proyecto. Nuestros anticipos no superan el 2% del total de la
+            obra. El saldo restante lo abonás luego de obtener resultados.
           </div>
         </div>
         <div className="cards">
           <div className="card-title">Garantía</div>
           <div className="card-subtitle">
-            Todas nuestras obras tienen garantía y podes cambiar lo que no te
+            Todas nuestras obras tienen garantía escrita por 10 años y podes cambiar lo que no te
             gustó hasta 6 meses después de haber finalizado la obra.
           </div>
         </div>
@@ -156,16 +156,13 @@ export const Main = () => {
           </div>
           <div className="text-circle">
             <div className="card-subtitle">
-              <div className="card-title">Construcción Rápida</div>
-              Una vez aprobado el proyecto, podes tener tu casa en 150 días
-              lista para habitar y dejar de alquilar.
+              <div className="card-title">Resultados instantáneos</div>
+              Recibís resultados de tu proyecto en los primeros 7 días de contratación.
             </div>
 
             <div className="card-subtitle">
-              <div className="card-title">Asesoramiento</div>
-              Contamos con un amplio staff de cada gremio para ayudarte a
-              pensar, diseñar y decorar tu proyecto tanto en interior como en
-              exterior.
+              <div className="card-title">Reuniones flexibles</div>
+              Para no entorpecer tu rutina, ofrecemos salas de reuniones en Zona Sur, Norte y CABA en amplias franjas horarias ya que trabajamos con la red de oficinas más grande de Argentina.
             </div>
           </div>
         </div>
@@ -175,8 +172,8 @@ export const Main = () => {
         <div className="text-circle">
           <div className="card-subtitle">
             <div className="card-title">Construcción Rápida</div>
-            Una vez aprobado el proyecto, podes tener tu casa en 150 días lista
-            para habitar y dejar de alquilar.
+            Una vez aprobado el proyecto, podes tener tu casa en 120 días lista
+            para habitar y dejar de alquilar sin importar la cantidad de metros cuadrados.
           </div>
 
           <div className="card-subtitle">
@@ -192,7 +189,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="steelframe box">Trabajos terminados</div>
+      <div className="steelframe box">Proyectos cumplidos:</div>
       <br />
 
       <div className="box">
@@ -294,15 +291,15 @@ export const Main = () => {
             día.
           </div>
           <h3 className="">
-            Zona de servicio: <br /> Buenos Aires, Argentina.
+            Zona de servicio: <br /> CABA <br /> Zona Sur <br />Zona Norte <br />Zona Oeste <br />Interior de Bs As <br />Costa Atlántica <br />Consultar otras zonas
           </h3>
           <br />
           <br />
           <br />
           <br />
           <h3>
-            Lavalle 333, CABA <br />
-            casedif@gmail.com <br /> Teléfono: +54 9 11 7618 0939
+            Av. Caseros 1750, Nuevo Quilmes Plaza, Don Bosco. <br />
+            info@casedif.com <br /> Teléfono: +54 9 11 7618 0939
           </h3>
           <br />
           <br />
