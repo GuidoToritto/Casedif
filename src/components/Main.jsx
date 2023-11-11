@@ -49,11 +49,11 @@ export const Main = () => {
     const desembolsoInicial = presupuesto * 0.015;
   
     // Validar campos
-    if (isNaN(m2CubiertosNumber) || isNaN(m2SemicubiertosNumber)) {
+    if (m2CubiertosNumber === 0 || m2SemicubiertosNumber === 0) {
       Swal.fire({
         icon: "error",
         title: "Error",
-        text: "Por favor, completa todos los campos con valores numéricos.",
+        text: "Por favor, completa todos los campos con valores.",
       });
       return;
     }
@@ -250,7 +250,7 @@ export const Main = () => {
                   <input
                     type="number"
                     id="m2cubiertos"
-                    value={m2Cubiertos === 0 ? '' : m2Cubiertos} 
+                    value={m2Cubiertos}
                     onChange={(e) => setM2Cubiertos(e.target.value)}
                   />
                 </li>
@@ -264,7 +264,7 @@ export const Main = () => {
                     type="number"
                     
                     id="m2semicubierto"
-                    value={m2Semicubiertos === 0 ? '' : m2Semicubiertos} 
+                    value={m2Semicubiertos}
                     onChange={(e) => setM2Semicubiertos(e.target.value)}
                   />
                 </li>

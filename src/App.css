@@ -1,11 +1,11 @@
 
 @font-face{
-  src: url(../src/fuentes/static-league/LeagueSpartan-Medium.ttf) format('truetype');
+  src: url(LeagueSpartan-Medium.ttf) format('truetype');
   font-family:"League Spartan";
 }
 
 @font-face{
-  src: url(../src/fuentes/static/Montserrat-Medium.ttf) format('truetype');
+  src: url(Montserrat-Medium.ttf) format('truetype');
   font-family:"Montserrat";
 }
 
@@ -180,7 +180,7 @@ p {
 }
 
 .background-color-image .card-title {
-  color: #000;
+  color: #ffffff;
   text-decoration: underline;
 }
 
