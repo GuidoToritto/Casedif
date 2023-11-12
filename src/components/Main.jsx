@@ -168,7 +168,7 @@ export const Main = () => {
         </div>
       </div>
 
-      <div className="image-circle box">
+      <div className="image-circle box circle2">
         <div className="text-circle">
           <div className="card-subtitle">
             <div className="card-title">Construcción Rápida</div>
@@ -290,13 +290,15 @@ export const Main = () => {
             Completá los datos de tu proyecto y cotizá tu obra en menos de un
             día.
           </div>
-          <h3 className="">
+          <h3 className="zona-servicio">
             Zona de servicio: <br /> CABA <br /> Zona Sur <br />Zona Norte <br />Zona Oeste <br />Interior de Bs As <br />Costa Atlántica <br />Consultar otras zonas
           </h3>
+          <div className="brs">
           <br />
           <br />
           <br />
           <br />
+          </div>
           <h3>
             Av. Caseros 1750, Nuevo Quilmes Plaza, Don Bosco. <br />
             info@casedif.com <br /> Teléfono: +54 9 11 7618 0939

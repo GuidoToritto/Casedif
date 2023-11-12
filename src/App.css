@@ -616,7 +616,7 @@ li {
   .image-circle-03 {
     width: 160px;
     height: 160px;
-    left: 40px;
+    left: 35px;
     top: 20px;
   }
 
@@ -727,6 +727,10 @@ li {
     padding-bottom: 0px;
   }
 
+  .image-circle .card-subtitle{
+    text-align: start;
+    font-weight: bold;
+  }
 }
 
 .swal2-show {
@@ -757,11 +761,11 @@ li {
 
 .box {
   transform: translateX(400%);
-  transition: transform 1s ease;
+  transition: transform 0.4s ease;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-200%);
+  transform: translateX(-400%);
 }
 
 .box.show {
@@ -772,4 +776,31 @@ li {
   font-size: 20px;
   margin: 0px;
   color: #000;
+}
+
+@media (max-width: 700px){
+  .box {
+    transform: translateX(0%);
+    transition: transform 0.0s ease;
+  }
+  
+  .box:nth-of-type(even) {
+    transform: translateX(0%);
+  }
+  
+  .box.show{
+    transform: translateX(0);
+  }
+
+  .circle2 .card-subtitle{
+    padding: 0px;
+  }
+
+  .zona-servicio{
+    font-size: 15px;
+  }
+
+  .brs{
+    display: none;
+  }
 }
