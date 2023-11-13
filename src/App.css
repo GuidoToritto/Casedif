@@ -159,6 +159,7 @@ p {
 
 .card-title {
   color: #f4ce14;
+  font-weight: bold;
   font-size: 30px;
   text-decoration: underline;
 }
@@ -180,7 +181,8 @@ p {
 }
 
 .background-color-image .card-title {
-  color: #ffffff;
+  color: #000;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -223,22 +225,22 @@ p {
 }
 
 .image-circle-01 {
-  border: 4px solid black;
+  border: 2px solid black;
   width: 500px;
   height: 500px;
-  opacity: 80%;
-  background-image: url(https://i.pinimg.com/564x/ab/f8/2b/abf82bdc9bdae779ba21799b538cf3ad.jpg);
+  background-image: url(./images/VENTAJAS/Resultados\ Instantáneos.jpg);
   position: relative;
   border-radius: 100%;
   left: 50px;
   top: 100px;
 }
 
+
 .image-circle-02 {
-  border: 4px solid black;
+  border: 2px solid black;
   width: 500px;
   height: 500px;
-  background-image: url(https://i.pinimg.com/564x/46/e7/6a/46e76ac7024806ec32264568bb4809f7.jpg);
+  background-image: url(./images/VENTAJAS/Reuniones\ Flexibles.jpg);
   position: relative;
   border-radius: 100%;
   left: 200px;
@@ -246,10 +248,10 @@ p {
 }
 
 .image-circle-03 {
-  border: 4px solid #f4ce14;
+  border: 2px solid #f4ce14;
   width: 500px;
   height: 500px;
-  background-image: url(https://i.pinimg.com/564x/ab/f8/2b/abf82bdc9bdae779ba21799b538cf3ad.jpg);
+  background-image: url(./images/VENTAJAS/Construcción\ Rápida.jpg);
   opacity: 80%;
   position: relative;
   border-radius: 100%;
@@ -258,10 +260,10 @@ p {
 }
 
 .image-circle-04 {
-  border: 4px solid #f4ce14;
+  border: 2px solid #f4ce14;
   width: 500px;
   height: 500px;
-  background-image: url(https://i.pinimg.com/564x/46/e7/6a/46e76ac7024806ec32264568bb4809f7.jpg);
+  background-image: url(./images/VENTAJAS/Asesoramiento.jpg);
   position: relative;
   border-radius: 100%;
   left: 150px;
@@ -287,7 +289,7 @@ p {
   margin: 10px;
   position: relative;
   transition: flex 0.7s ease-in;
-  border: 4px solid #f4ce14;
+  border: 2px solid #f4ce14;
 }
 
 .panel.active {

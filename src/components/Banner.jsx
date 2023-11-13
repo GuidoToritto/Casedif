@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-import Img01 from "../images/01.webp";
+import Img01 from "../images/PORTADA.jpg";
 
 
 export const Banner = () => {
@@ -11,7 +11,7 @@ export const Banner = () => {
   return (
     <div>
       <img
-        src="https://www.samuelsgroup.net/hubfs/Images/Blog%20Images/5%20Types%20of%20Construction.jpg"
+        src={Img01}
         className="Img01"
         alt=""
       />

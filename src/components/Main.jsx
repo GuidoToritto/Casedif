@@ -2,6 +2,27 @@ import React, { useRef, useState } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Swal from "sweetalert2";
 import ScrollBoxes from "./Animation";
+import Img01 from "../images/CAROUSEL/01.png"
+import Img02 from "../images/CAROUSEL/02.png"
+import Img03 from "../images/CAROUSEL/03.png"
+import Img04 from "../images/CAROUSEL/04.png"
+import Img05 from "../images/CAROUSEL/05.png"
+import Img06 from "../images/CAROUSEL/06.png"
+import Img07 from "../images/CAROUSEL/07.png"
+import Img08 from "../images/CAROUSEL/08.png"
+import Img09 from "../images/CAROUSEL/09.png"
+import Img10 from "../images/CAROUSEL/10.png"
+import Img11 from "../images/CAROUSEL/12.png"
+import Img12 from "../images/CAROUSEL/13.png"
+import Img13 from "../images/CAROUSEL/14.png"
+import Img14 from "../images/CAROUSEL/15.png"
+import Img15 from "../images/CAROUSEL/12.png"
+import Img16 from "../images/CAROUSEL/16.png"
+import Img17 from "../images/CAROUSEL/18.png"
+import Img18 from "../images/CAROUSEL/19.png"
+import Img19 from "../images/CAROUSEL/20.png"
+import Img20 from "../images/CAROUSEL/21.png"
+
 
 export const Main = () => {
   const projectSectionRef = useRef();
@@ -12,18 +33,65 @@ export const Main = () => {
   const data = [
     {
       image:
-        "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
-      caption: "Desliza para ver los resultados entregados",
+        Img01 
     },
     {
       image:
-        "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
-      caption: "Desliza para ver los resultados entregados",
-    },
-    {
+        Img02 
+    },{
       image:
-        "https://fibrasymallas.com/wp-content/uploads/2018/07/steel-frame.jpg",
-      caption: "Deliza para ver los resultados entregados",
+        Img03 
+    },{
+      image:
+        Img04 
+    },{
+      image:
+        Img05 
+    },{
+      image:
+        Img06 
+    },{
+      image:
+        Img07 
+    },{
+      image:
+        Img08 
+    },{
+      image:
+        Img09 
+    },{
+      image:
+        Img10 
+    },{
+      image:
+        Img11 
+    },{
+      image:
+        Img12 
+    },{
+      image:
+        Img13 
+    },{
+      image:
+        Img14 
+    },{
+      image:
+        Img15 
+    },{
+      image:
+        Img16 
+    },{
+      image:
+        Img17 
+    },{
+      image:
+        Img18
+    },{
+      image:
+        Img19 
+    },{
+      image:
+        Img20 
     },
   ];
 
@@ -157,7 +225,7 @@ export const Main = () => {
           <div className="text-circle">
             <div className="card-subtitle">
               <div className="card-title">Resultados instantáneos</div>
-              Recibís resultados de tu proyecto en los primeros 7 días de contratación.
+              Recibirás los resultados de tu proyecto en los primeros 7 días después de la contratación, asegurándote una rápida y eficiente entrega de los avances y logros alcanzados.
             </div>
 
             <div className="card-subtitle">
