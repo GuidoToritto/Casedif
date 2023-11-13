@@ -1,12 +1,11 @@
-
-@font-face{
-  src: url(LeagueSpartan-Medium.ttf) format('truetype');
-  font-family:"League Spartan";
+@font-face {
+  src: url(LeagueSpartan-Medium.ttf) format("truetype");
+  font-family: "League Spartan";
 }
 
-@font-face{
-  src: url(Montserrat-Medium.ttf) format('truetype');
-  font-family:"Montserrat";
+@font-face {
+  src: url(Montserrat-Medium.ttf) format("truetype");
+  font-family: "Montserrat";
 }
 
 .work {
@@ -44,7 +43,6 @@ body {
   background-color: black;
   color: rgb(244, 206, 20);
   overflow-x: hidden;
-
 }
 
 .parent-logo {
@@ -235,7 +233,6 @@ p {
   top: 100px;
 }
 
-
 .image-circle-02 {
   border: 2px solid black;
   width: 500px;
@@ -420,13 +417,12 @@ li {
   margin: 0 auto;
 }
 
-.p2{
+.p2 {
   border-radius: 20px 20px 0px 0px;
 }
 
 @media (max-width: 1680px) {
-
-  body{
+  body {
     overflow-x: hidden;
   }
   .steelframe01 {
@@ -467,29 +463,29 @@ li {
   }
 
   .image-circle-01 {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     left: -30px;
     top: 30px;
   }
 
   .image-circle-02 {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     left: 0px;
     top: 0px;
   }
 
   .image-circle-03 {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     left: 40px;
     top: 20px;
   }
 
   .image-circle-04 {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
     left: 10px;
     top: -10px;
   }
@@ -554,8 +550,8 @@ li {
   }
 }
 
-@media (max-width: 700px) {
-  body{
+@media (max-width: 930px) {
+  body {
     overflow-x: hidden;
   }
 
@@ -606,6 +602,8 @@ li {
     height: 160px;
     left: -30px;
     top: 30px;
+    background-repeat: no-repeat;
+    background-size: 200px;
   }
 
   .image-circle-02 {
@@ -613,6 +611,8 @@ li {
     height: 160px;
     left: 0px;
     top: 0px;
+    background-repeat: no-repeat;
+    background-size: 300px;
   }
 
   .image-circle-03 {
@@ -620,6 +620,8 @@ li {
     height: 160px;
     left: 35px;
     top: 20px;
+    background-repeat: no-repeat;
+    background-size: 200px;
   }
 
   .image-circle-04 {
@@ -627,6 +629,8 @@ li {
     height: 160px;
     left: 10px;
     top: -10px;
+    background-repeat: no-repeat;
+    background-size: 200px;
   }
   .background-color-image {
     width: 100%;
@@ -669,8 +673,6 @@ li {
     font-size: 30px;
   }
 
-  
-
   textarea,
   input {
     width: 90%;
@@ -705,7 +707,7 @@ li {
     font-size: 15px;
     width: 80%;
     margin: 0 auto;
-    padding: 20px ;
+    padding: 20px;
   }
 
   .presupuesto .card-title {
@@ -721,15 +723,15 @@ li {
     font-size: 20px;
   }
 
-  .introducir-presupuesto .btn-info-down{
+  .introducir-presupuesto .btn-info-down {
     width: 250px;
   }
 
-  .introducir-presupuesto{
+  .introducir-presupuesto {
     padding-bottom: 0px;
   }
 
-  .image-circle .card-subtitle{
+  .image-circle .card-subtitle {
     text-align: start;
     font-weight: bold;
   }
@@ -774,35 +776,35 @@ li {
   transform: translateX(0);
 }
 
-.swal2-html-container p{
+.swal2-html-container p {
   font-size: 20px;
   margin: 0px;
   color: #000;
 }
 
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .box {
     transform: translateX(0%);
-    transition: transform 0.0s ease;
+    transition: transform 0s ease;
   }
-  
+
   .box:nth-of-type(even) {
     transform: translateX(0%);
   }
-  
-  .box.show{
+
+  .box.show {
     transform: translateX(0);
   }
 
-  .circle2 .card-subtitle{
+  .circle2 .card-subtitle {
     padding: 0px;
   }
 
-  .zona-servicio{
+  .zona-servicio {
     font-size: 15px;
   }
 
-  .brs{
+  .brs {
     display: none;
   }
 }
