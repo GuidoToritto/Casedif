@@ -638,7 +638,7 @@ li {
   }
 
   .image-circle .card-title {
-    font-size: 20px;
+    font-size: 15px;
     margin: 0 auto;
     width: 150px;
   }
@@ -792,7 +792,21 @@ li {
     padding-top: 10px;
   }
 
- 
+  .card-subtitle .card-title{
+    margin-top: 15px;
+  }
+  .box {
+    transform: translateX(100%);
+    transition: transform 0.8s ease-out;
+  }
+  
+  .box:nth-of-type(even) {
+    transform: translateX(-100%);
+  }
+  
+  .box.show {
+    transform: translateX(0);
+  }
 
   .zona-servicio {
     font-size: 15px;
