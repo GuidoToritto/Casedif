@@ -95,7 +95,7 @@ p {
 .steelframe01 {
   margin: 0 auto;
   width: 80%;
-  padding-top: 80px;
+  padding-top: 40px;
   font-size: 100px;
   padding-left: 1%;
   font-weight: bold;
@@ -764,12 +764,12 @@ li {
 }
 
 .box {
-  transform: translateX(400%);
-  transition: transform 0.4s ease;
+  transform: translateX(200%);
+  transition: transform 1s ease-out;
 }
 
 .box:nth-of-type(even) {
-  transform: translateX(-400%);
+  transform: translateX(-200%);
 }
 
 .box.show {
@@ -783,21 +783,29 @@ li {
 }
 
 @media (max-width: 700px) {
-  .box {
-    transform: translateX(0%);
-    transition: transform 0s ease;
+
+  .title.box.show{
+    margin-top: 150px;
   }
 
+  .steelframe01{
+    padding-top: 10px;
+  }
+
+  .card-subtitle .card-title{
+    margin-top: 15px;
+  }
+  .box {
+    transform: translateX(0%);
+    transition: transform 1s ease-out;
+  }
+  
   .box:nth-of-type(even) {
     transform: translateX(0%);
   }
-
+  
   .box.show {
     transform: translateX(0);
-  }
-
-  .circle2 .card-subtitle {
-    padding: 0px;
   }
 
   .zona-servicio {
