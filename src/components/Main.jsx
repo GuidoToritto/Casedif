@@ -180,7 +180,7 @@ export const Main = () => {
           Quiero construir
         </div>
       </div>
-
+      
       <div className="title box">Las ventajas de construir con nosotros</div>
       <div className="subtitle box">
         <ScrollBoxes />
@@ -237,7 +237,7 @@ export const Main = () => {
       </div>
 
       <div className="image-circle box circle2">
-        <div className="text-circle">
+        <div className="text-circle ">
           <div className="card-subtitle">
             <div className="card-title">Construcción Rápida</div>
             Una vez aprobado el proyecto, podes tener tu casa en 120 días lista
@@ -350,7 +350,7 @@ export const Main = () => {
       <br />
 
       <div ref={projectSectionRef} className="project-together box">
-        <div className="banner-form">
+        <div className="banner-form ">
           <br />
           <br />
           <div className="comencemos">¡Comencemos juntos tu proyecto!</div>

@@ -421,6 +421,51 @@ li {
   border-radius: 20px 20px 0px 0px;
 }
 
+.swal2-show {
+  border: 2px solid #000;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 20px;
+}
+
+.swal2-container button:where(.swal2-styled).swal2-confirm {
+  background-color: #f4ce14;
+  color: #000;
+  font-weight: bold;
+  border: 2px solid #000;
+  border-radius: 20px;
+}
+
+.swal2-actions {
+  border-radius: 20px;
+  color: #000;
+}
+
+.swal2-popup.swal2-toast {
+  color: #f4ce14;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.box {
+  transform: translateX(200%);
+  transition: transform 1s ease-out;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.swal2-html-container p {
+  font-size: 20px;
+  margin: 0px;
+  color: #000;
+}
+
 @media (max-width: 1680px) {
   body {
     overflow-x: hidden;
@@ -737,50 +782,6 @@ li {
   }
 }
 
-.swal2-show {
-  border: 2px solid #000;
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  border-radius: 20px;
-}
-
-.swal2-container button:where(.swal2-styled).swal2-confirm {
-  background-color: #f4ce14;
-  color: #000;
-  font-weight: bold;
-  border: 2px solid #000;
-  border-radius: 20px;
-}
-
-.swal2-actions {
-  border-radius: 20px;
-  color: #000;
-}
-
-.swal2-popup.swal2-toast {
-  color: #f4ce14;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.box {
-  transform: translateX(200%);
-  transition: transform 1s ease-out;
-}
-
-.box:nth-of-type(even) {
-  transform: translateX(-200%);
-}
-
-.box.show {
-  transform: translateX(0);
-}
-
-.swal2-html-container p {
-  font-size: 20px;
-  margin: 0px;
-  color: #000;
-}
 
 @media only screen and (max-width: 700px) {
 
@@ -796,20 +797,20 @@ li {
     margin-top: 15px;
   }
   .box {
-    transform: translateX(100%);
+    transform: translateX(-00%);
     transition: transform 0.8s ease-out;
   }
   
   .box:nth-of-type(even) {
     transform: translateX(-100%);
   }
-  
+
   .box.show {
     transform: translateX(0%);
   }
 
   .box{
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 
   .zona-servicio {
