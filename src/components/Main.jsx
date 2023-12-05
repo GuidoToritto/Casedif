@@ -2,27 +2,26 @@ import React, { useRef, useState } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Swal from "sweetalert2";
 import ScrollBoxes from "./Animation";
-import Img01 from "../images/CAROUSEL/01.png"
-import Img02 from "../images/CAROUSEL/02.png"
-import Img03 from "../images/CAROUSEL/03.png"
-import Img04 from "../images/CAROUSEL/04.png"
-import Img05 from "../images/CAROUSEL/05.png"
-import Img06 from "../images/CAROUSEL/06.png"
-import Img07 from "../images/CAROUSEL/07.png"
-import Img08 from "../images/CAROUSEL/08.png"
-import Img09 from "../images/CAROUSEL/09.png"
-import Img10 from "../images/CAROUSEL/10.png"
-import Img11 from "../images/CAROUSEL/12.png"
-import Img12 from "../images/CAROUSEL/13.png"
-import Img13 from "../images/CAROUSEL/14.png"
-import Img14 from "../images/CAROUSEL/15.png"
-import Img15 from "../images/CAROUSEL/12.png"
-import Img16 from "../images/CAROUSEL/16.png"
-import Img17 from "../images/CAROUSEL/18.png"
-import Img18 from "../images/CAROUSEL/19.png"
-import Img19 from "../images/CAROUSEL/20.png"
-import Img20 from "../images/CAROUSEL/21.png"
-
+import Img01 from "../images/CAROUSEL/01.png";
+import Img02 from "../images/CAROUSEL/02.png";
+import Img03 from "../images/CAROUSEL/03.png";
+import Img04 from "../images/CAROUSEL/04.png";
+import Img05 from "../images/CAROUSEL/05.png";
+import Img06 from "../images/CAROUSEL/06.png";
+import Img07 from "../images/CAROUSEL/07.png";
+import Img08 from "../images/CAROUSEL/08.png";
+import Img09 from "../images/CAROUSEL/09.png";
+import Img10 from "../images/CAROUSEL/10.png";
+import Img11 from "../images/CAROUSEL/12.png";
+import Img12 from "../images/CAROUSEL/13.png";
+import Img13 from "../images/CAROUSEL/14.png";
+import Img14 from "../images/CAROUSEL/15.png";
+import Img15 from "../images/CAROUSEL/12.png";
+import Img16 from "../images/CAROUSEL/16.png";
+import Img17 from "../images/CAROUSEL/18.png";
+import Img18 from "../images/CAROUSEL/19.png";
+import Img19 from "../images/CAROUSEL/20.png";
+import Img20 from "../images/CAROUSEL/21.png";
 
 export const Main = () => {
   const projectSectionRef = useRef();
@@ -32,66 +31,64 @@ export const Main = () => {
 
   const data = [
     {
-      image:
-        Img01 
+      image: Img01,
     },
     {
-      image:
-        Img02 
-    },{
-      image:
-        Img03 
-    },{
-      image:
-        Img04 
-    },{
-      image:
-        Img05 
-    },{
-      image:
-        Img06 
-    },{
-      image:
-        Img07 
-    },{
-      image:
-        Img08 
-    },{
-      image:
-        Img09 
-    },{
-      image:
-        Img10 
-    },{
-      image:
-        Img11 
-    },{
-      image:
-        Img12 
-    },{
-      image:
-        Img13 
-    },{
-      image:
-        Img14 
-    },{
-      image:
-        Img15 
-    },{
-      image:
-        Img16 
-    },{
-      image:
-        Img17 
-    },{
-      image:
-        Img18
-    },{
-      image:
-        Img19 
-    },{
-      image:
-        Img20 
+      image: Img02,
+    },
+    {
+      image: Img03,
+    },
+    {
+      image: Img04,
+    },
+    {
+      image: Img05,
+    },
+    {
+      image: Img06,
+    },
+    {
+      image: Img07,
+    },
+    {
+      image: Img08,
+    },
+    {
+      image: Img09,
+    },
+    {
+      image: Img10,
+    },
+    {
+      image: Img11,
+    },
+    {
+      image: Img12,
+    },
+    {
+      image: Img13,
+    },
+    {
+      image: Img14,
+    },
+    {
+      image: Img15,
+    },
+    {
+      image: Img16,
+    },
+    {
+      image: Img17,
+    },
+    {
+      image: Img18,
+    },
+    {
+      image: Img19,
+    },
+    {
+      image: Img20,
     },
   ];
 
@@ -111,11 +108,11 @@ export const Main = () => {
     // Convertir los valores a números
     const m2CubiertosNumber = parseFloat(m2Cubiertos);
     const m2SemicubiertosNumber = parseFloat(m2Semicubiertos);
-  
+
     // Realizar cálculos
-    const presupuesto = m2CubiertosNumber * 590 + m2SemicubiertosNumber * 295;
+    const presupuesto = m2CubiertosNumber * 549 + m2SemicubiertosNumber * 275;
     const desembolsoInicial = presupuesto * 0.015;
-  
+
     // Validar campos
     if (m2CubiertosNumber === 0 || m2SemicubiertosNumber === 0) {
       Swal.fire({
@@ -172,7 +169,7 @@ export const Main = () => {
   return (
     <div>
       <div className="steelframe01 box">
-        Construí tu casa en Steelframe sin arriesgar tu dinero
+        Tené tu casa propia sin arriesgar tu dinero
       </div>
       <div className="steelframe02 box">
         <div>Modalidad llave en mano</div>
@@ -180,7 +177,7 @@ export const Main = () => {
           Quiero construir
         </div>
       </div>
-      
+
       <div className="title box">Las ventajas de construir con nosotros</div>
       <div className="subtitle box">
         <ScrollBoxes />
@@ -207,8 +204,9 @@ export const Main = () => {
         <div className="cards">
           <div className="card-title">Garantía</div>
           <div className="card-subtitle">
-            Todas nuestras obras tienen garantía escrita por 10 años y podes cambiar lo que no te
-            gustó hasta 6 meses después de haber finalizado la obra.
+            Todas nuestras obras tienen garantía escrita por 10 años y podes
+            cambiar lo que no te gustó hasta 6 meses después de haber finalizado
+            la obra.
           </div>
         </div>
       </div>
@@ -225,12 +223,16 @@ export const Main = () => {
           <div className="text-circle">
             <div className="card-subtitle">
               <div className="card-title">Resultados instantáneos</div>
-              Recibirás los resultados de tu proyecto en los primeros 7 días después de la contratación, asegurándote una rápida y eficiente entrega de los avances y logros alcanzados.
+              Recibirás los resultados de tu proyecto en los primeros 7 días
+              después de la contratación, asegurándote una rápida y eficiente
+              entrega de los avances y logros alcanzados.
             </div>
 
             <div className="card-subtitle">
               <div className="card-title">Reuniones flexibles</div>
-              Para no entorpecer tu rutina, ofrecemos salas de reuniones en Zona Sur, Norte y CABA en amplias franjas horarias ya que trabajamos con la red de oficinas más grande de Argentina.
+              Para no entorpecer tu rutina, ofrecemos salas de reuniones en Zona
+              Sur, Norte y CABA en amplias franjas horarias ya que trabajamos
+              con la red de oficinas más grande de Argentina.
             </div>
           </div>
         </div>
@@ -241,7 +243,8 @@ export const Main = () => {
           <div className="card-subtitle">
             <div className="card-title">Construcción Rápida</div>
             Una vez aprobado el proyecto, podes tener tu casa en 120 días lista
-            para habitar y dejar de alquilar sin importar la cantidad de metros cuadrados.
+            para habitar y dejar de alquilar sin importar la cantidad de metros
+            cuadrados.
           </div>
 
           <div className="card-subtitle">
@@ -310,7 +313,7 @@ export const Main = () => {
             <div className="container-presu">
               <div className="introducir-presupuesto">
                 <li>
-                  <label htmlFor="m2cubiertos" >Introducí M2 cubiertos:</label>{" "}
+                  <label htmlFor="m2cubiertos">Introducí M2 cubiertos:</label>{" "}
                   <br />
                   <input
                     type="number"
@@ -327,7 +330,6 @@ export const Main = () => {
                   <input
                     className="p2"
                     type="number"
-                    
                     id="m2semicubierto"
                     value={m2Semicubiertos}
                     onChange={(e) => setM2Semicubiertos(e.target.value)}
@@ -359,13 +361,18 @@ export const Main = () => {
             día.
           </div>
           <h3 className="zona-servicio">
-            Zona de servicio: <br /> CABA <br /> Zona Sur <br />Zona Norte <br />Zona Oeste <br />Interior de Bs As <br />Costa Atlántica <br />Consultar otras zonas
+            Zona de servicio: <br /> CABA <br /> Zona Sur <br />
+            Zona Norte <br />
+            Zona Oeste <br />
+            Interior de Bs As <br />
+            Costa Atlántica <br />
+            Consultar otras zonas
           </h3>
           <div className="brs">
-          <br />
-          <br />
-          <br />
-          <br />
+            <br />
+            <br />
+            <br />
+            <br />
           </div>
           <h3>
             Av. Caseros 1750, Nuevo Quilmes Plaza, Don Bosco. <br />
@@ -388,13 +395,13 @@ export const Main = () => {
               />
               <input type="hidden" name="_captcha" value="false" />
               <li>
-                <label for="name-input">Name:</label> <br />
+                <label for="name-input">Nombre:</label> <br />
                 <input type="text" id="name" name="name" />
               </li>
               <li>
-                <label htmlFor="mail">Email: </label>
+                <label htmlFor="number">Teléfono: </label>
                 <br />
-                <input type="email" id="mail" name="user_email" />
+                <input type="number" id="mail" name="user_email" />
               </li>
               <li>
                 <label htmlFor="ubicacion_proyecto">
@@ -408,7 +415,7 @@ export const Main = () => {
                 />
               </li>
               <li>
-                <label htmlFor="msg">Message:</label> <br />
+                <label htmlFor="msg">Mensaje:</label> <br />
                 <textarea id="msg" name="user_message" />
               </li>
               <button className="btn-info-down">Enviar</button>

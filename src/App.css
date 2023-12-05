@@ -466,7 +466,18 @@ li {
   color: #000;
 }
 
+.title.box.show{
+  margin-top: 450px;
+}
+
+
 @media (max-width: 1680px) {
+
+  .title.box.show{
+    margin-top: 200px;
+  }
+  
+  
   body {
     overflow-x: hidden;
   }
@@ -786,7 +797,7 @@ li {
 @media only screen and (max-width: 700px) {
 
   .title.box.show{
-    margin-top: 150px;
+    margin-top: 200px;
   }
 
   .steelframe01{
@@ -821,3 +832,4 @@ li {
     display: none;
   }
 }
+
