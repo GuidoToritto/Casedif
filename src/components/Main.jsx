@@ -210,10 +210,7 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
+      
       <div className="background-color-image">
         <div className="image-circle box">
           <div>
@@ -261,7 +258,7 @@ export const Main = () => {
       </div>
 
       <div className="steelframe box">Proyectos cumplidos:</div>
-      <br />
+      
 
       <div className="box">
         <div style={{ textAlign: "center" }}>

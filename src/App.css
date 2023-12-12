@@ -614,6 +614,7 @@ li {
   .steelframe01 {
     width: 350px;
     font-size: 40px;
+    
   }
   .steelframe02 {
     font-size: 20px;
@@ -798,14 +799,19 @@ li {
 
   .title.box.show{
     margin-top: 200px;
+    
   }
 
   .steelframe01{
-    padding-top: 10px;
+    padding-top: 70px;
+    font-size: 30px;
+    
+  
   }
 
   .card-subtitle .card-title{
     margin-top: 15px;
+    
   }
   .box {
     transform: translateX(-00%);
