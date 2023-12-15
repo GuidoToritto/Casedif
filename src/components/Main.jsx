@@ -31,7 +31,7 @@ export const Main = () => {
 
   const data = [
     {
-      // image: Img01,
+     image: Img01,
     },
     {
       image: Img02,
