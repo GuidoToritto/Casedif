@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <header>
       <div className="parent-logo">
-        <img src={Logo} className="logo" alt="" />
+        <img src={Logo} className="logo" loading="lazy" alt="" />
       </div>
       <div className="logo-text">
         <h1>Casedif <br /><p>EMPRESA CONSTRUCTORA</p></h1>
