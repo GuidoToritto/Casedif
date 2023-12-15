@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react";
 import { Carousel } from "react-carousel-minimal";
 import Swal from "sweetalert2";
 import ScrollBoxes from "./Animation";
-import Img01 from "../images/CAROUSEL/01.png";
 import Img02 from "../images/CAROUSEL/02.png";
 import Img03 from "../images/CAROUSEL/03.png";
 import Img04 from "../images/CAROUSEL/04.png";
@@ -30,9 +29,6 @@ export const Main = () => {
   };
 
   const data = [
-    {
-     image: Img01,
-    },
     {
       image: Img02,
     },
@@ -210,7 +206,7 @@ export const Main = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="background-color-image">
         <div className="image-circle box">
           <div>
@@ -258,7 +254,6 @@ export const Main = () => {
       </div>
 
       <div className="steelframe box">Proyectos cumplidos:</div>
-      
 
       <div className="box">
         <div style={{ textAlign: "center" }}>
