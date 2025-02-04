@@ -367,7 +367,7 @@ export const Main = () => {
             <br />
           </div>
           <h3>
-           Av. Hipólito Yrigoyen 4789, Buenos Aires <br />
+           Av. Hipólito Yrigoyen 4789, Lanús Oeste. Buenos Aires <br />
             info@casedif.com <br /> Teléfono: +54 9 11 7618 0939
           </h3>
           <br />
