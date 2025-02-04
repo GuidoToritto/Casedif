@@ -367,7 +367,7 @@ export const Main = () => {
             <br />
           </div>
           <h3>
-            Av. Caseros 1750, Nuevo Quilmes Plaza, Don Bosco. <br />
+           Av. Hipólito Yrigoyen 4789, Buenos Aires <br />
             info@casedif.com <br /> Teléfono: +54 9 11 7618 0939
           </h3>
           <br />
