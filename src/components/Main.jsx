@@ -165,7 +165,7 @@ export const Main = () => {
   return (
     <div>
       <div className="steelframe01 box">
-        Tené tu casa propia sin arriesgar tu dinero
+       Construimos sin anticipo. Pagás solo cuando cumplimos.
       </div>
       <div className="steelframe02 box">
         <div>Modalidad llave en mano</div>
@@ -367,8 +367,8 @@ export const Main = () => {
             <br />
           </div>
           <h3>
-           Av. Hipólito Yrigoyen 4789, Lanús Centro. Buenos Aires <br />
-            info@casedif.com <br /> Teléfono: +54 9 11 7618 0939
+          Marcelo T. de Alvear 925, Ciudad Autónoma de Buenos Aires. <br />
+            casedif@gmail.com <br /> Teléfono: +54 9 11 7618 0939
           </h3>
           <br />
           <br />
