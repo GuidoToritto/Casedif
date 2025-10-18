@@ -106,8 +106,8 @@ export const Main = () => {
     const m2SemicubiertosNumber = parseFloat(m2Semicubiertos);
 
     // Realizar cálculos
-    const presupuesto = m2CubiertosNumber * 549 + m2SemicubiertosNumber * 275;
-    const desembolsoInicial = presupuesto * 0.015;
+    const presupuesto = m2CubiertosNumber * 729 + m2SemicubiertosNumber * 364.5;
+    const desembolsoInicial = 99;
 
     // Validar campos
     if (m2CubiertosNumber === 0 || m2SemicubiertosNumber === 0) {
